@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginVertical="25dp">
+        <TextView
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book"
+            android:textSize="21sp"
+            android:textColorHighlight="@color/colorPrimary"
+            android:id="@+id/book"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/book"
+            android:id="@+id/ll"
+            android:orientation="vertical">
+            <CheckBox
+                android:layout_alignParentTop="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:id="@+id/checkbox"
+                android:text="DS"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checkbox"
+                android:text="Android"
+                android:layout_marginTop="5dp"
+                android:id="@+id/checkbox1"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checkbox1"
+                android:layout_marginTop="5dp"
+                android:text="Java"
+                android:id="@+id/checkbox2"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:id="@+id/rl2"
+            android:layout_toRightOf="@+id/ll">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="600dp"
+                android:layout_height="165dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/vgt"></ImageView>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl"
+        android:layout_marginTop="42dp"
+        android:id="@+id/rl1"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll1"
+            android:layout_marginLeft="40dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textColorHighlight="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:background="@drawable/abc_vector_test"
+                android:enabled="true"
+                android:textSize="20sp"
+                android:hint="Tom"
+                android:maxLength="10" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="25dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/author"
+                android:text="Author"
+                android:textColorHighlight="@color/colorPrimary"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/et2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textSize="20sp"
+                android:background="@drawable/abc_vector_test"
+                android:hint="Tom"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Translator"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/ll2"
+            android:id="@+id/text4"></TextView>
+
+        <ListView
+            android:id="@+id/lv1"
+            android:layout_width="121dp"
+            android:layout_height="271dp"
+            android:layout_below="@+id/ll2"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="11dp"
+            android:layout_toRightOf="@+id/text4"></ListView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl3"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/rl1"
+        android:layout_below="@+id/rl">
+        <Button
+            android:id="@+id/bb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MENU"
+            android:padding="2dp"
+            android:layout_marginLeft="75dp"
+            android:textColorHighlight="@color/colorPrimary"
+            />
+        <TextView
+            android:id="@+id/loan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bb"
+            android:layout_marginTop="20dp"
+            android:text="Loanable"
+            android:layout_marginLeft="10dp"
+            android:textColorHighlight="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rg"
+            android:layout_below="@+id/bb"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="96dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rd"
+                android:layout_width="wrap_content"
+                android:checked="true"
+                android:layout_height="wrap_content"
+                android:text="yes" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rd1"
+                android:checked="true"
+                android:text="No"
+                />
+        </RadioGroup>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:layout_below="@+id/rl"
+        android:layout_marginLeft="200dp"
+
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:id="@+id/cncl"
+            ></Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD"
+            android:id="@+id/add"
+            ></Button>
+    </LinearLayout>
+
+
+</RelativeLayout>

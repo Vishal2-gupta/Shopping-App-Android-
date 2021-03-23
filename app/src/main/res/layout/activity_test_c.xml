@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestCA"
+    android:padding="20dp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:text="Book"
+        android:textStyle="bold"
+        android:textSize="21sp"
+        android:textColorHighlight="@color/colorPrimary"
+        android:id="@+id/book"/>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="62dp"
+        android:layout_toRightOf="@+id/book"
+        android:src="@drawable/vgt"></ImageView>
+
+    <CheckBox
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/book"
+        android:layout_marginTop="3dp"
+        android:id="@+id/checkbox"
+        android:text="DS"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkbox"
+        android:layout_marginLeft="45dp"
+        android:text="Android"
+        android:layout_marginTop="5dp"
+        android:id="@+id/checkbox1"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkbox1"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="5dp"
+        android:text="Java"
+        android:id="@+id/checkbox2"/>
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:paddingTop="40dp"
+            android:text="Title"
+            android:textColorHighlight="@color/colorPrimary"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/fn"
+            android:layout_width="197dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:background="@drawable/abc_vector_test"
+            android:hint="Tom"
+            android:inputType="textPersonName" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="165dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Author"
+            android:textColorHighlight="@color/colorPrimary"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/id1"
+            android:layout_width="197dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/abc_vector_test"
+            android:enabled="true"
+            android:hint="Tom"
+            android:maxLength="10" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Translator"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/ll1"
+        android:id="@+id/text4"></TextView>
+
+    <ListView
+        android:id="@+id/lv1"
+        android:layout_width="130dp"
+        android:layout_height="271dp"
+        android:layout_below="@+id/ll1"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="11dp"
+        android:layout_toRightOf="@+id/text4"
+        android:paddingTop="0dp"></ListView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="375dp"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            ></Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD"
+            ></Button>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="11dp"
+        android:paddingRight="150dp"
+        android:padding="5dp"
+        android:text="MENU"
+        android:textColorHighlight="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/loan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="78dp"
+        android:text="Loanable"
+        android:textColorHighlight="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg"
+        android:layout_toRightOf="@+id/loan"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="300dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rd"
+            android:layout_width="wrap_content"
+            android:checked="true"
+            android:layout_height="wrap_content"
+            android:text="yes" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rd1"
+            android:checked="true"
+            android:text="No"
+            />
+    </RadioGroup>
+
+
+</RelativeLayout>
