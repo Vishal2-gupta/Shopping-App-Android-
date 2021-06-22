@@ -23,7 +23,9 @@ Android apps in the Java programming language using an IDE called Android Studio
     
 <p align ="center">
 <img src="https://user-images.githubusercontent.com/62341045/122977797-70ccaa80-d3b3-11eb-9016-8530309da2d7.jpg" width="300" height="500"/>
-## Items To Add In Cart Value..   
+ 
+# Items To Add In Cart Value..
+ 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/62341045/122977818-74f8c800-d3b3-11eb-8bce-617854a2c516.jpg" width="300" height="500"/>
       
@@ -31,6 +33,9 @@ Android apps in the Java programming language using an IDE called Android Studio
 <img src="https://user-images.githubusercontent.com/62341045/122977824-7629f500-d3b3-11eb-9a5d-e93f428d9692.jpg" width="300" height="500"/>
    
 # Customer Support Done Using Intent..
+   
+ <p align ="center">
+ <img src="https://user-images.githubusercontent.com/62341045/122979527-48de4680-d3b5-11eb-9254-b42cd4bf61dc.jpg" width="300" height="500"/>
    
 
 
